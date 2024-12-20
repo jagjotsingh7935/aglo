@@ -1,0 +1,14 @@
+from django.test import TestCase
+from ..models import ToDoItem
+
+class ToDoItemModelTest(TestCase):
+    def test_create_todo_item(self):
+        item = ToDoItem.objects.create(
+            title="Sample Task",
+            description="Description of the sample task.",
+            due_date="2024-12-25",
+            tags=["work", "urgent"],
+            status="OPEN"
+        )
+        self.assertEqual(item.title, "Sample Task")
+        self.assertIn("work", item.tags)

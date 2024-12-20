@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List App Documentation</h1>
+    <h2>API Endpoints</h2>
+    <ul>
+        <li><strong>POST /api/todos/</strong>: Create a new To-Do item.</li>
+        <li><strong>GET /api/todos/</strong>: Retrieve all To-Do items.</li>
+        <li><strong>GET /api/todos/{id}/</strong>: Retrieve a single To-Do item.</li>
+        <li><strong>PUT /api/todos/{id}/</strong>: Update an existing To-Do item.</li>
+        <li><strong>DELETE /api/todos/{id}/</strong>: Delete a To-Do item.</li>
+    </ul>
+    <h2>Testing</h2>
+    <p>Run <code>python manage.py test</code> for unit and integration tests.</p>
+</body>
+</html>
